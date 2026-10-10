@@ -1,47 +1,30 @@
+import {Link} from"react-router-dom";
 function Navbar() {
     return (
         <nav>
-
+           
             
-            <div className="hidden md:flex items-center gap-5 px-5 py-4 bg-white shadow-md">
-
+            <div className="hidden md:flex items-center gap-5 px-5 py-4 bg-green-200 shadow-md">
+               
                 {/* Logo */}
                 <h1 className="text-3xl font-bold cursor-pointer whitespace-nowrap">
                     <span className="text-black-600">Medi</span>
-                    <span className="text-black-600">cart</span>
+                    <span className="text-green-600">Cart</span>
                     
                 </h1>
 
 
                 {/* Navigation Links */}
                 <div className="flex items-center gap-6">
-                    <a
-                        href="#"
-                        className="text-gray-700 font-medium hover:text-green-600 transition"
-                    >
-                        Medicines
-                    </a>
+                     <Link to="/" className="text-gray-700 font-medium hover:text-green-600 transition">Home</Link>
 
-                    <a
-                        href="/categories"
-                        className="text-gray-700 font-medium hover:text-green-600 transition"
-                    >
-                        Categories
-                    </a>
+                    <Link to="/Medicines" className="text-gray-700 font-medium hover:text-green-600 transition"> Medicines</Link>
 
-                    <a
-                        href="#"
-                        className="text-gray-700 font-medium hover:text-green-600 transition"
-                    >
-                        Offers
-                    </a>
+                    <Link to="/Categories" className="text-gray-700 font-medium hover:text-green-600 transition">Categories </Link>
 
-                    <a
-                        href="#"
-                        className="text-gray-700 font-medium hover:text-green-600 transition"
-                    >
-                        Health Tips
-                    </a>
+                    <Link to="/Offers" className="text-gray-700 font-medium hover:text-green-600 transition">Offers </Link>
+
+                    <Link to="/Healthtips" className="text-gray-700 font-medium hover:text-green-600 transition"> Healthtips </Link>
                 </div>
 
 
@@ -61,13 +44,8 @@ function Navbar() {
 
                 {/* Wishlist & Cart */}
                 <div className="flex items-center gap-3">
-                    <button className=" bg-green-700 border border-gray-300 px-4 py-2 rounded-lg hover:bg-green-600 transition whitespace-nowrap">
-                        ❤️ Wishlist
-                    </button>
-
-                    <button className="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition whitespace-nowrap">
-                        🛒 Cart (0)
-                    </button>
+                    <Link to ="/Wishlist" className=" bg-green-700 border border-gray-300 px-4 py-2 rounded-lg hover:bg-green-600 transition whitespace-nowrap">❤️ Wishlist   </Link>
+                    <Link to ="/Cart" className="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition whitespace-nowrap"> 🛒 Cart (0)  </Link>
                 </div>
 
 
@@ -163,8 +141,10 @@ function Navbar() {
                 </div>
 
             </div>
+            
 
         </nav>
+        
     );
 }
 
