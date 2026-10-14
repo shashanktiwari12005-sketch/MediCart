@@ -42,7 +42,7 @@ function Category(){
             
             </div>
 
-            <div className="text-right mt-6">
+            <div className="text-right mt-1 mb-1">
                 <a href="categories" className="text-green-700">View all Categories →</a>
             </div>
         </section>

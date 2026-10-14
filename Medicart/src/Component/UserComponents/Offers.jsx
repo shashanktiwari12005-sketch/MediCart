@@ -49,7 +49,7 @@ function Offers() {
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo5c2f64vi2_Fh3FDVAS9GvOHPL6UUUoGbLHXZGswH8w&s=10"
               className="mx-auto w-100 h-80"
             />
-
+            
           </div>
 
         </div>

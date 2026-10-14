@@ -9,7 +9,7 @@ function Navbar() {
                 {/* Logo */}
                 <h1 className="text-3xl font-bold cursor-pointer whitespace-nowrap">
                     <span className="text-black-600">Medi</span>
-                    <span className="text-green-600">Cart</span>
+                    <span className="text-green-600">Cart</span>✚
                     
                 </h1>
 
